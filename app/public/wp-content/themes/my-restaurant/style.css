@@ -1,0 +1,155 @@
+/* 
+Theme Name: My Restaurant
+Text Domain: My Restaurant
+Version: 1.0
+Description: My Restaurant Theme
+Tags: restaurant, food, chicken, starters, main course
+Author: Bhavana Madupuri
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url("assets/images/front-page.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+  min-height: 430px;
+  padding: 1em;
+  position: relative;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+
+.cover {
+  background-color: #8a795c;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.heading-welcome {
+  z-index: 100;
+}
+
+.product-add-to-cart a,
+.add-to-cart-button,
+.wc-block-components-button__text {
+  background: black;
+  border: 1px solid;
+  padding: 10px 30px;
+  color: white !important;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.wc-block-components-totals-coupon__button,
+.wc-block-components-checkout-place-order-button {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: fit-content;
+  background: none;
+  border: none;
+}
+
+.wc-block-components-totals-coupon__button span,
+.wc-block-components-checkout-place-order-button span {
+  margin-top: 0px;
+}
+
+.wc-block-components-totals-coupon-link {
+  background: bisque;
+  border: 0.5px solid #f1f1f1;
+  padding: 10px 30px;
+  color: black;
+  margin-top: 10px;
+  border-radius: 0;
+}
+
+.product-single-image {
+  width: 300px;
+  height: 300px;
+}
+
+.single-product {
+  width: max-content;
+}
+
+.related-products {
+  margin-top: 50px;
+}
+
+.related-products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.related-products .products {
+  gap: 10px;
+  display: flex;
+  padding: 0;
+}
+
+.related-products .products .product,
+.single-product {
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+}
+
+.related-products .products .product:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-MyAccount-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.woocommerce-loop-product__title {
+  color: black;
+}
+
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link a {
+  color: rgb(92, 92, 113);
+}
+
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link {
+  padding: 10px;
+  border-bottom: 2px solid black;
+
+}
+
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link:hover{
+    border-top: 5px solid green;
+}
